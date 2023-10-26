@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/*mother-container*/
+.mother-container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "aside section section"
+    "aside article article" ;
+}
+aside{grid-area: aside;}
+section{grid-area: section;}
+article{grid-area: article;}
+/**/
+.left-side-menu{
+    padding-block: 24px;
+}
+
+.bot-projects{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.bot-projects h6{
+    color: #5F6D7E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.1px; 
+}
+.section-1{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.section-1 h3{
+    color: white;
+    background-color:#437EF7 ;
+    padding: 8px 12px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.1px; 
+}
+.section-1 h4{
+    color: #272D37;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.1px; 
+}
+.section-2{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+/*progress-bar*/
+.progress-bar {
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #666;
+}
+.progress {
+    width: 20%; /* İlerlemenin yüzdesini buradan ayarlayabilirsiniz */
+    height: 8px;
+    display: block; /* <span> elementini bir blok öğesi olarak ayarlar */
+    background-color: #437EF7;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+  }
