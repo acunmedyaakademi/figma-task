@@ -158,13 +158,12 @@ article{grid-area: article;}
   /*Aside Menu end*/
 
   /*Section started*/
-.frame-4273{
-    padding: 24px 32px;
-}
+
 .inner-frame{
     display: flex;
     flex-direction: column;
     gap: 24px;
+    padding: 24px 32px;
 }
 .frame-top{
     display: flex;
@@ -191,6 +190,7 @@ article{grid-area: article;}
     flex-direction: column;
     gap: 24px;
     align-items: start;
+    border-bottom: 1px solid #EAEBF0;
 }
 .frame-mid-top h4{
     color: #272D37;
@@ -211,7 +211,7 @@ article{grid-area: article;}
     flex-direction: row;
     gap: 24px;
     align-items: center;
-    border-bottom: 1px solid #EAEBF0;
+    
     
 }
 .frame-mid-bot a:hover{
@@ -242,4 +242,71 @@ article{grid-area: article;}
       background-color: #ff7200;
       color: white;
     }
+}
+
+.frame-bot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid #DAE0E6;
+    border: 0;
+}
+.bot-do-buttons{
+    display: flex;
+    align-items: center;
+    height: max-content;
+}
+.frame-do{
+    color: #272D37;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */ 
+    padding: 10px 12px;
+    cursor: pointer;
+    border: #DAE0E6 solid 1px;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04); 
+    background-color: #fff;
+    border-radius: 5px;
+}
+.do-all{
+    background-color: #F7F7F8;
+}
+.frame-do:hover{
+    background-color: #437EF7;
+    color: white;
+}
+.bot-do-filters, .filter-bttn, .add-board{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.filter-bttn{
+    background-color: #437EF7;
+    color: white;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 5px;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */ 
+}
+.filter-bttn:hover{
+    background-color: #77a4ff;
+}
+.add-board{
+    color: #272D37;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */ 
+    padding: 8px 12px;
+    border: 1px solid #DAE0E6;
+    border-radius: 5px;
+    gap: 8px;
+    background-color: #fff;
+}
+.add-board:hover{
+    background-color:#a7a7a7;
 }
