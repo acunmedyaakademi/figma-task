@@ -13,10 +13,11 @@ a{
 /*mother-container*/
 .mother-container{
     margin: 0 auto;
+    width: 1440px;
     display: grid;
     grid-template-areas: "aside section section"
     "aside article article" ;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 19.5% 80.5%;
 }
 aside{grid-area: aside;}
 section{grid-area: section;}
@@ -24,6 +25,9 @@ article{grid-area: article;}
 
 /*Aside Menu start*/
 .left-side-menu{
+    border-right: 1px solid #EAEBF0;
+}
+.inner-left-menu{
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -50,6 +54,12 @@ article{grid-area: article;}
     line-height: 22px; /* 146.667% */
     letter-spacing: -0.1px; 
 }
+.posts-not {
+    padding-left: 100px;
+}
+.schedule-not{
+    padding-left: 75px;
+}
 .menu-income{
     padding-left: 21px;
     list-style: none;
@@ -58,6 +68,9 @@ article{grid-area: article;}
     content: "\2022"; /* Noktalı liste işareti kodu (•) */
     color: #5F6D7E;
     margin-right: 12px;
+}
+.menu-section a:hover{
+    color: #437EF7;
 }
 .bot-projects{
     display: flex;
@@ -85,6 +98,7 @@ article{grid-area: article;}
     gap: 12px;
     border-radius: 10px;
     width: 192px;
+    cursor: pointer;
 }
 .task-button img{
     padding: 10px;
@@ -141,3 +155,27 @@ article{grid-area: article;}
     line-height: 30px;
   }
   /*Aside Menu end*/
+
+  /*Section started*/
+  .frame-4273{
+    padding: 24px 32px;
+  }
+  .frame-top{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .frame-top h6{
+    color: #5F6D7E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.1px; 
+  }
+  .frame-top h5{
+    color: #437EF7;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.1px; 
+  }
