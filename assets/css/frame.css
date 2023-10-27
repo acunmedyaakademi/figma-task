@@ -1,11 +1,36 @@
-@font-face {
-    font-family: 'Inter';
-    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
+
+/*Bonusss Dark-Light Mode*/
 body {
-  font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    transition: 450ms all;
+  }
+body.dark{
+    background-color: #1C2534;
+    color: #fff;
+}
+/*Light-dark mode check box css*/
+.mode-control{
+    display: flex;
+    align-items: center;
+}
+.mode-control input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.mode-control span:nth-of-type(2){
+    display: none;
+}
+.mode-control input:checked + span {
+    display: none;
+}
+.mode-control input:checked + span + span{
+    display: inline-block;
+}
+.mode-control span{
+    display: inline-block;
+    padding: 10px 16px;
 }
 a{
     text-decoration: none;
@@ -392,4 +417,11 @@ article{grid-area: article;}
 }
 .bigger-bttn:hover{
     background-color: #F7F7F8;
+}
+/*ToDo list ended*/
+@font-face {
+    font-family: 'Inter';
+    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
