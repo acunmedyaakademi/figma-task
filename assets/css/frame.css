@@ -16,15 +16,49 @@ a{
     display: grid;
     grid-template-areas: "aside section section"
     "aside article article" ;
+    grid-template-columns: 25% 75%;
 }
 aside{grid-area: aside;}
 section{grid-area: section;}
 article{grid-area: article;}
-/**/
+
+/*Aside Menu start*/
 .left-side-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     padding-block: 24px;
 }
-
+.menu-top, .menu-section, .menu-bot{
+    padding-inline: 28px;
+}
+.menu-section{
+    display: flex;
+    flex-direction: column;
+    height: 857px;
+}
+.section-links{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    height: 48px;
+}
+.menu-section a{
+    color: #5F6D7E;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px; /* 146.667% */
+    letter-spacing: -0.1px; 
+}
+.menu-income{
+    padding-left: 21px;
+    list-style: none;
+}
+.menu-income li::before {
+    content: "\2022"; /* Noktalı liste işareti kodu (•) */
+    color: #5F6D7E;
+    margin-right: 12px;
+}
 .bot-projects{
     display: flex;
     flex-direction: column;
@@ -37,6 +71,26 @@ article{grid-area: article;}
     line-height: 20px; /* 142.857% */
     letter-spacing: -0.1px; 
 }
+.menu-bot{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.task-button{
+    border: 0;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border-radius: 10px;
+    width: 192px;
+}
+.task-button img{
+    padding: 10px;
+    border: 1px dashed #DAE0E6;
+    border-radius: 50px;
+}
 .section-1{
     display: flex;
     align-items: center;
@@ -45,7 +99,7 @@ article{grid-area: article;}
 .section-1 h3{
     color: white;
     background-color:#437EF7 ;
-    padding: 8px 12px;
+    padding: 10px 16px;
     border-radius: 50px;
     font-size: 14px;
     font-weight: 600;
@@ -64,7 +118,14 @@ article{grid-area: article;}
     align-items: center;
     gap: 12px;
 }
-/*progress-bar*/
+.section-2 h4{
+    color: #5F6D7E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.1px; 
+}
+    /*progress-bar*/
 .progress-bar {
     border-radius: 5px;
     background-color: #f1f1f1;
@@ -79,3 +140,4 @@ article{grid-area: article;}
     text-align: center;
     line-height: 30px;
   }
+  /*Aside Menu end*/
