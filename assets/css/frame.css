@@ -71,6 +71,7 @@ article{grid-area: article;}
 }
 .menu-section a:hover{
     color: #437EF7;
+    background-color: #F3F9FE;
 }
 .bot-projects{
     display: flex;
@@ -153,29 +154,92 @@ article{grid-area: article;}
     border-radius: 5px;
     text-align: center;
     line-height: 30px;
-  }
+}
   /*Aside Menu end*/
 
   /*Section started*/
-  .frame-4273{
+.frame-4273{
     padding: 24px 32px;
-  }
-  .frame-top{
+}
+.inner-frame{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.frame-top{
     display: flex;
     align-items: center;
     gap: 4px;
-  }
-  .frame-top h6{
+    cursor: pointer;
+}
+.frame-top h6{
     color: #5F6D7E;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px; /* 142.857% */
     letter-spacing: -0.1px; 
-  }
-  .frame-top h5{
+}
+.frame-top h5{
     color: #437EF7;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px; /* 142.857% */
     letter-spacing: -0.1px; 
-  }
+}
+.frame-mid{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: start;
+}
+.frame-mid-top h4{
+    color: #272D37;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 38px; /* 135.714% */
+    letter-spacing: -0.28px; 
+}
+.frame-mid-top h5{
+    color: #5F6D7E;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.1px; 
+}
+.frame-mid-bot{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    border-bottom: 1px solid #EAEBF0;
+    
+}
+.frame-mid-bot a:hover{
+    color: #437EF7;
+    border-bottom: 2px solid #437EF7;
+}
+.frame-notif{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+.frame-notif h6{
+    background-color: #efeff1;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px; /* 138.462% */
+    letter-spacing: -0.1px; 
+    padding-inline: 6px;
+    border-radius: 20px;
+    animation: flashBackgrounds 0.5s infinite alternate;
+}
+@keyframes flashBackgrounds {
+    0% {
+      background-color: #efeff1;
+    }
+    100% {
+      background-color: #ff7200;
+      color: white;
+    }
+}
