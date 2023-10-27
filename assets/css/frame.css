@@ -214,6 +214,13 @@ article{grid-area: article;}
     
     
 }
+.frame-mid-bot a{
+    color: #5F6D7E;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px; /* 146.667% */
+    letter-spacing: -0.1px; 
+}
 .frame-mid-bot a:hover{
     color: #437EF7;
     border-bottom: 2px solid #437EF7;
@@ -377,5 +384,12 @@ article{grid-area: article;}
     line-height: 20px; /* 142.857% */ 
     gap: 6px;
     cursor: pointer;
-    border-radius: 6px; 
+}
+.bigger-bttn{
+    width: 256px;
+    height: 147px;
+    background-color: #fff;
+}
+.bigger-bttn:hover{
+    background-color: #F7F7F8;
 }
