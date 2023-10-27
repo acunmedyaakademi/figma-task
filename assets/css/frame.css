@@ -310,3 +310,72 @@ article{grid-area: article;}
 .add-board:hover{
     background-color:#a7a7a7;
 }
+
+
+
+/*ToDo list started*/
+.do-list-inner{
+    margin: 0 auto;
+    background-color: #f8f9fb;
+    display: flex;
+    gap: 24px;
+    padding: 24px 32px;
+}
+.to-do-section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.toDo-border{
+    border: 1px solid #EAEBF0;
+    border-radius: 10px;
+    background-color: #fff;
+    padding-inline: 20px;
+}
+.border-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 16px;
+}
+.border-text h5{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.1px; 
+}
+.border-text button{
+    border: 0;
+    cursor: pointer;
+}
+.border-img{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 16px;
+}
+.border-img h4{
+    color: #5F6D7E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.1px; 
+}
+.border-img-inner-bot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bttn-dashed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #DAE0E6;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */ 
+    gap: 6px;
+    cursor: pointer;
+    border-radius: 6px; 
+}
