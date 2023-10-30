@@ -91,7 +91,7 @@
                         <button class="frame-do do-all">All</button>
                         <button class="frame-do">Saved</button>
                         <button class="frame-do">Recent</button>
-                        <a href="#" class="frame-do"  id="image-button">
+                        <a href="#" class="frame-do plus-button"  id="image-button">
                             <img src="assets/icon/plus-black.svg" alt="black-plus-icon" id="day-mode-img">
                             <img src="assets/icon/plus-white-icon.svg" alt="white-plus-icon" id="night-mode-img">
                         </a>
@@ -202,6 +202,9 @@
                         <img src="assets/icon/plus-black.svg" alt="" id="day-mode-img"> Add
                     </button>
                 </div>
+                <div id="notes">
+                    
+                </div>
                 <div class="to-do-section">
                     <h4>Done</h4>
                     <div class="toDo-border">
@@ -300,16 +303,22 @@
                             <img src="assets/icon/specs-title-icon.svg" alt="">
                             <h5>Description</h5>
                         </span>
-                        <p>
-                            Fermentum sed pharetra posuere eget fringilla sagittis mauris aliquam. Sapien, id quam interdum faucibus malesuada et. Magna a morbi nunc parturient tortor dignissim. Fringilla turpis eget malesuada diam facilisi. Imperdiet habitasse etiam id netus egestas ac.
-                        </p>
-                        <p>
-                            Et purus est tortor, potenti viverra tellus auctor faucibus tempus. Id orci ultrices massa turpis. Velit iaculis rhoncus, morbi faucibus malesuada a in. Ornare id velit nam eu mattis ac aliquam mauris eget. Arcu pellentesque pulvinar felis aliquet. Massa, quis pellentesque feugiat sed. Quisque dignissim et elit amet dui ut eros. Dictum quam at malesuada in.
+                        <p class="description-section">
+                            <input type="textarea" id="noneInput"><br>
+                            <div id="selectedOption"> </div>
                         </p>
                         <button class="section-3-bttn">Send</button>
                     </div>
-                    
                 </div>
+                <dialog id="dialogOptions">
+                    <label for="selectOptions">Select Your Options</label>
+                    <select id="selectOptions">
+                        <option value="To-Do">To Do List</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="done">Done</option>
+                    </select>
+                    <button id="confirmOptBtn">Confirm</button>
+                </dialog>
                 <div class="dialog-comment-section">
                         <div class="comment-inner">
                             <img src="assets/img/comment-avatar.png" alt="">
@@ -319,7 +328,6 @@
                                     <img src="assets/icon/happy-icon-darkgray-darkmode.svg" alt="" id="night-mode-img">
                                     <img src="assets/icon/attachment-icon-daymode.svg" alt="" id="day-mode-img">
                                     <img src="assets/icon/attachment-icon-darkmode.svg" alt="" id="night-mode-img">
- 
                             </span>
                         </div>
                     </div>

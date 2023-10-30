@@ -706,3 +706,6 @@ footer{grid-area: footer;}
     gap: 12px;
     align-items: center;
 }
+.comment-sec img{
+    cursor: pointer;
+}
